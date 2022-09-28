@@ -1,0 +1,20 @@
+.container {
+    min-height: "100vh"!important;
+
+}
+
+.input-form {
+    max-width: 680px!important;
+
+    margin-top: 80px!important;
+    padding: 32px!important;
+
+    background: #fff!important;
+    -webkit-border-radius: 10px!important;
+    -moz-border-radius: 10px!important;
+    border-radius: 10px!important;
+    -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)!important;
+    -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)!important;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)!important;
+  }
+

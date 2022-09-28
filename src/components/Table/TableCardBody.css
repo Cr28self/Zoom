@@ -1,0 +1,20 @@
+.react-bootstrap-table table{
+
+    white-space: nowrap;
+    table-layout: auto !important;
+}
+
+.row react-bootstrap-table-pagination{
+    display: flex !important;
+    justify-content: space-between !important;
+
+}
+
+.btn-space-right {
+
+    margin-right: 6px;
+}
+.btn-space-left {
+
+    margin-left: 6px;
+}
