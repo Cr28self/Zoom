@@ -2,9 +2,10 @@
 
 import axios from "axios";
 
-const host = "http://localhost:3000";
+import {BASE_URL} from './config'
 
-const instance = axios.create({ baseURL: `${host}` });
+
+const instance = axios.create({ baseURL: `${BASE_URL}` });
 
 
 /*
