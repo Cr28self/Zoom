@@ -8,16 +8,14 @@ import Footer from "./components/common/Footer";
 
 
 function App() {
-        const history = useNavigate();
+    const access = localStorage.getItem('idx');
 
-        const [user, setUser] = useState('');
-        const access = localStorage.getItem('idx');
-
-
+    const history = useNavigate();
+    const [user, setUser] = useState('');
 
 
     useEffect(() => {
-        if(access !== '' || access !== 'undefined') {
+        if (access !== '' || access !== 'undefined') {
             setUser(access);
         }
     }, [access])
@@ -25,17 +23,17 @@ function App() {
     return (
 
         <>
-            <Header currentUser={user} />
+            <Header currentUser={user}/>
             {/* //class="sb-sidenav-toggled" ==> 메뉴 집어넣음 */}
 
 
             <div id="layoutSidenav">
-                {access?<SideNav/>:" "}
+                {access ? <SideNav/> : " "}
 
                 <div id="layoutSidenav_content">
 
 
-                    <AppRouter />
+                    <AppRouter/>
 
                     <Footer/>
 
