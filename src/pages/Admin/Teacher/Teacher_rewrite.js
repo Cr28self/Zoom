@@ -23,17 +23,17 @@ const Teacher_rewrite = () => {
   const history = useNavigate();
 
   const [inputs, setInputs] = useState({
-    teacher_code:'',
+    teacherCode:'',
     id:id,
     password:'',
     name:'',
     gender:'',
-    identification_num:'',
+    ssnum:'',
     tel:'',
     email:'',
     etc:''
   });
-  const { teacher_code,password,name,gender,identification_num,tel,email,etc } = inputs;
+  const { teacherCode,password,name,gender,ssnum,tel,email,etc } = inputs;
   const onChangeHandler = (e) => {
     const { value, name } = e.target; // 우선 e.target 에서 name 과 value 를 추출
     setInputs({
@@ -57,11 +57,11 @@ const Teacher_rewrite = () => {
     fetchData().then((result) => {
       setInputs({
         ...inputs,
-        teacher_code:result.teacher_code,
+        teacherCode:result.teacherCode,
         password:result.password,
         name:result.name,
         gender:result.gender,
-        identification_num:result.identification_num,
+        ssnum:result.ssnum,
         tel:result.tel,
         email:result.email,
         etc:result.etc
@@ -91,7 +91,7 @@ const Teacher_rewrite = () => {
         <h1 className="mt-4">강의자 수정</h1>
 
         <div className="card-body">
-          <InputTeacherCode value={teacher_code} />
+          <InputTeacherCode value={teacherCode} />
           <InputID id={id} />
           <br />
           <InputPassword onChange={onChangeHandler}
@@ -111,7 +111,7 @@ const Teacher_rewrite = () => {
           <br />
           <InputIdentification
               onChange={onChangeHandler}
-              value={identification_num}
+              value={ssnum}
           />
           <br />
           <br />

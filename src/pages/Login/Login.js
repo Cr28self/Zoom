@@ -39,7 +39,8 @@ const Login = () => {
 
         authApi.login(body)
             .then(response => {
-                window.location.href = "/"
+                localStorage.setItem('token',response.accessToken);
+                navigate('/');
 
             })
             .catch((e) => {

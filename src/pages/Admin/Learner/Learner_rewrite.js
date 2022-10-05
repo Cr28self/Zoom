@@ -25,7 +25,7 @@ const Learner_rewrite = () => {
   const [inputs, setInputs] = useState({
     id:id,
     password:'',
-    name:'',
+    lname:'',
     gender:'',
     birthday:'',
     tel:'',

@@ -1,7 +1,7 @@
 import http from "./http";
 
 export const load = (users) => {
-    return http.get(`/api/${users}`);
+    return http.get(`/${users}`);
 }; //테이블 데이터 전체 load할때
 
 
@@ -12,29 +12,25 @@ export const loadUserInfo = (users, id) => {
 
 
 export const editUser = (users, id, formData) => {
-    return http.put(`/api/${users}/${id}`, formData);
+    return http.put(`/api/${users}/update`, formData);
 };
 /*한명의 user데이터 수정할때 ( put )*/
 
 
 export const create = (users, formData) => {
-    return http.post(`/api/${users}`, formData);
+    return http.post(`/api/${users}/join`, formData);
 };
 /*
 user 추가하는 함수 (post)
 */
 export const createContract = (users, formData) => {
-    return http.post(`/api/${users}`, formData, {
-        headers: {
-            'Content-Type': 'multipart/form-data'
-        }
-    })
+    return http.post(`/${users}`, formData )
 };
 
 
 export const deleteUser = (pathname,rowid) =>{
 
-    return http.delete(`/api/${pathname}/${rowid}`)
+    return http.delete(`/api/${pathname}/delete`,rowid)
 }
 
 

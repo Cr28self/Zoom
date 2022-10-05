@@ -32,17 +32,17 @@ const PASSWORD_TEXT = "비밀번호"+'\u00A0'+'\u00A0'+'\u00A0'+'\u00A0'+'\u00A0
 
 export const LEARNER_SCHEME = [
   {
-    dataField: "id",
+    dataField: "learnerId",
     text: "ID",
     sort: true,
   },
   {
-    dataField: "password",
+    dataField: "pwd",
     text:PASSWORD_TEXT ,
     formatter: ShowHide,
   },
   {
-    dataField: "name",
+    dataField: "lname",
     text: "이름",
     sort: true,
     // filter: textFilter(),
@@ -88,7 +88,7 @@ export const LEARNER_SCHEME = [
 
 export const TEACHER_SCHEME = [
   {
-    dataField: "teacher_code",
+    dataField: "teacherCode",
     text: "강의자 코드",
     sort: true,
   },
@@ -112,7 +112,7 @@ export const TEACHER_SCHEME = [
     text: "성별",
   },
   {
-    dataField: "identification_num",
+    dataField: "ssnum",
     text: "주민번호",
   },
   {
@@ -144,7 +144,7 @@ export const TEACHER_SCHEME = [
 
 export const CONTRACT_SCHEME = [
   {
-    dataField: "teacher_code",
+    dataField: "teacherCode",
     text: "강사 코드",
     sort: true,
   },

@@ -6,7 +6,7 @@ const InputTeacherCode = (props) => {
           type="text"
           className="form-control"
           id="Teacher code"
-          name="teacher_code"
+          name="teacherCode"
           value={props.value}
           placeholder="강의자 코드"
           maxLength="16"

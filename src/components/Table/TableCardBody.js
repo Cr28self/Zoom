@@ -56,7 +56,7 @@ const TableCardBody = (props) => {
     <div className="card-body">
       <ToolkitProvider
         bootstrap4
-        keyField="id"
+        keyField={props.type==="learner"?"learnerId":"teacherCode"}
         data={props.data}
         columns={columns()}
 

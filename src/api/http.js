@@ -8,7 +8,6 @@ import {BASE_URL} from './config'
 const instance = axios.create({ baseURL: `${BASE_URL}` });
 
 
-/*
 
 instance.interceptors.request.use(
     function(config){
@@ -33,7 +32,7 @@ instance.interceptors.response.use(
         if (error.response && error.response.status === 403) {
             try {
                 const originalRequest = error.config;
-                const data = await instance.get('auth/refreshtoken')
+                const data = await instance.post('/api/member/reissue')
                 if (data) {
                     const {accessToken, refreshToken} = data.data
                     localStorage.removeItem('user')
@@ -51,7 +50,6 @@ instance.interceptors.response.use(
         return Promise.reject(error)
     }
 )
-*/
 
 
 

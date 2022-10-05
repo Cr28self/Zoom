@@ -18,17 +18,17 @@ export default function Teacher_create() {
   const history = useNavigate();
 
   const [inputs, setInputs] = useState({
-    teacher_code:'',
+    teacherCode:'',
     id:'',
     password:'',
     name:'',
     gender:'',
-    identification_num:'',
+    ssnum:'',
     tel:'',
     email:'',
     etc:''
   });
-  const { teacher_code,id,password,name,gender,identification_num,tel,email,etc } = inputs;
+  const { teacherCode,id,password,name,gender,ssnum,tel,email,etc } = inputs;
   const onChangeHandler = (e) => {
     const { value, name } = e.target; // 우선 e.target 에서 name 과 value 를 추출
     setInputs({
@@ -87,7 +87,7 @@ export default function Teacher_create() {
           <div className="card-body">
             <InputTeacherCode
                 mode={"create"}
-                value={teacher_code}
+                value={teacherCode}
                 onChange={onChangeHandler}
             />
             <br />
@@ -117,7 +117,7 @@ export default function Teacher_create() {
             <br /><br />
             <InputIdentification
                 onChange={onChangeHandler}
-                value={identification_num}
+                value={ssnum}
             />
             <br />
             <InputTel

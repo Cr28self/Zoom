@@ -1,0 +1,111 @@
+{
+  "learner": [
+    {
+      "learnerId": "hahaha",
+      "pwd": "!spdke3333",
+      "lname": "zzz",
+      "gender": "남",
+      "birthday": "2022-08-08",
+      "tel": "01066662222",
+      "email": "kwak@jejunu.ac.kr",
+      "etc": "기타.."
+    },
+    {
+      "learnerId": "test",
+      "pwd": "!!ppeee2222",
+      "lname": "욱",
+      "gender": "여",
+      "birthday": "2022-08-23",
+      "tel": "01067783262",
+      "email": "tkhoon3262@stu.jejunu.ac.kr",
+      "etc": "qefeq"
+    },
+    {
+      "learnerId": "asdf",
+      "pwd": "!!dddd33333",
+      "lname": "장욱",
+      "gender": "여",
+      "birthday": "2022-08-03",
+      "tel": "01067783262",
+      "email": "tkhoon3study@gmail.com",
+      "etc": "eqfqef"
+    },
+    {
+      "learnerId": "ㄴㄴㄴ",
+      "pwd": "!eefwef3333",
+      "lname": "욱",
+      "gender": "여",
+      "birthday": "2022-09-05",
+      "tel": "01067783262",
+      "email": "sad",
+      "etc": "qef"
+    }
+  ],
+  "teacher": [
+    {
+      "teacherCode": "fff",
+      "id": "3333dd",
+      "password": "!pppp3dd",
+      "name": "욱ㅇㅇㅇㅇdd",
+      "gender": "여",
+      "ssnum": "112e",
+      "tel": "000000000",
+      "email": "tkhoon3262@stu.jejunu.ac.kree",
+      "etc": "eqfeqfqef"
+    },
+    {
+      "teacherCode": "0115522",
+      "id": "tkhoon3",
+      "password": "!!ddddd3333",
+      "name": "오상현",
+      "gender": "여",
+      "ssnum": "11155",
+      "tel": "0001111222",
+      "email": "thebigone3262@naver.com",
+      "etc": "aaaaaa"
+    },
+    {
+      "teacherCode": "0132",
+      "id": "ffff",
+      "password": "!ssss222",
+      "name": "dd",
+      "gender": "여",
+      "ssnum": "11155",
+      "tel": "0001111222",
+      "email": "tkhoon3262@stu.jejunu.ac.kree",
+      "etc": "fff"
+    }
+  ],
+  "contract": [
+    {
+      "teacherCode": "0115522",
+      "name": "333",
+      "contract_name": "ㅇㄹㄹ",
+      "contract_file": "C:\\fakepath\\Update.exe",
+      "agree_date": "2022-09-07T16:26",
+      "wdate": "",
+      "lecture_time": "3",
+      "id": "8SY7Vyk"
+    },
+    {
+      "teacherCode": "02322",
+      "name": "오상현",
+      "contract_name": "contraced",
+      "contract_file": "C:\\fakepath\\preview.bmp",
+      "agree_date": "2022-09-01T23:27",
+      "wdate": "",
+      "lecture_time": "222",
+      "id": "-MXrFhg"
+    },
+    {
+      "teacherCode": "ㅁㄹ",
+      "name": "ㅁ",
+      "contract_name": "ㅁㅇ",
+
+      "agree_date": "2022-10-14T15:29",
+      "wdate": "",
+      "lecture_time": "1",
+      "id": "5ZObEJT"
+    }
+  ]
+}

@@ -15,7 +15,7 @@ import {createContract} from "../../../api/board";
 export default function Contract_create() {
   const history = useNavigate();
   const [inputs, setInputs] = useState({
-    teacher_code:'',
+    teacherCode:'',
     name:'',
     contract_name:'',
     contract_file:'',
@@ -32,7 +32,7 @@ export default function Contract_create() {
     });
   };
 
-  const { teacher_code,name,contract_name,contract_file,agree_date,wdate,lecture_time } = inputs;
+  const { teacherCode,name,contract_name,contract_file,agree_date,wdate,lecture_time } = inputs;
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
@@ -76,7 +76,7 @@ export default function Contract_create() {
         <div className="card-body">
           <InputTeacherCode
               mode={"create"}
-              value={teacher_code}
+              value={teacherCode}
               onChange={onChangeHandler}
           />
           <br />
