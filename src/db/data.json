@@ -3,7 +3,7 @@
     {
       "learnerId": "hahaha",
       "pwd": "!spdke3333",
-      "lname": "zzz",
+      "lname": "name1",
       "gender": "남",
       "birthday": "2022-08-08",
       "tel": "01066662222",
@@ -13,51 +13,22 @@
     {
       "learnerId": "test",
       "pwd": "!!ppeee2222",
-      "lname": "욱",
+      "lname": "name2",
       "gender": "여",
       "birthday": "2022-08-23",
       "tel": "01067783262",
-      "email": "tkhoon3262@stu.jejunu.ac.kr",
+      "email": "aa@naver.com",
       "etc": "qefeq"
-    },
-    {
-      "learnerId": "asdf",
-      "pwd": "!!dddd33333",
-      "lname": "장욱",
-      "gender": "여",
-      "birthday": "2022-08-03",
-      "tel": "01067783262",
-      "email": "tkhoon3study@gmail.com",
-      "etc": "eqfqef"
-    },
-    {
-      "learnerId": "ㄴㄴㄴ",
-      "pwd": "!eefwef3333",
-      "lname": "욱",
-      "gender": "여",
-      "birthday": "2022-09-05",
-      "tel": "01067783262",
-      "email": "sad",
-      "etc": "qef"
     }
+
   ],
   "teacher": [
-    {
-      "teacherCode": "fff",
-      "id": "3333dd",
-      "password": "!pppp3dd",
-      "name": "욱ㅇㅇㅇㅇdd",
-      "gender": "여",
-      "ssnum": "112e",
-      "tel": "000000000",
-      "email": "tkhoon3262@stu.jejunu.ac.kree",
-      "etc": "eqfeqfqef"
-    },
+
     {
       "teacherCode": "0115522",
-      "id": "tkhoon3",
+      "id": "kkk",
       "password": "!!ddddd3333",
-      "name": "오상현",
+      "name": "teacher1",
       "gender": "여",
       "ssnum": "11155",
       "tel": "0001111222",
@@ -66,7 +37,7 @@
     },
     {
       "teacherCode": "0132",
-      "id": "ffff",
+      "id": "teacher2",
       "password": "!ssss222",
       "name": "dd",
       "gender": "여",

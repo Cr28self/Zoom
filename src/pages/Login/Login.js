@@ -4,18 +4,17 @@ import {Link, useNavigate} from "react-router-dom";
 import * as authApi from "../../api/auth";
 import {Navigate} from 'react-router-dom';
 import {Button} from "react-bootstrap";
+import DuplicateBtn from "../../components/common/Button/DuplicateBtn";
 
 
 const Login = () => {
 
 
     const navigate = useNavigate();
-    const [user, setUser] = useState()
+
     const [id, setId] = useState()
     const [password, setPassword] = useState()
 
-
-    console.log(user)
     const onChangeId = (e) => {
 
         setId(e.target.value)
@@ -31,20 +30,31 @@ const Login = () => {
         event.preventDefault();
         console.log(id)
 
-        let body = {
-            user:user,
-            id: id,
-            password: password
+        var LoginParams = {
+            'email':id,
+            'password':password,
         }
 
-        authApi.login(body)
+
+        //로그인 이벤트
+        authApi.login(LoginParams)
             .then(response => {
-                localStorage.setItem('token',response.accessToken);
+                localStorage.setItem('user',id); //user의 정보
+
+                const {accessToken, refreshToken} = response;
+                localStorage.setItem(
+                    'token',
+                    JSON.stringify({ accessToken: accessToken, refreshToken: refreshToken })
+                );
+                //토큰 정보 저장
+
                 navigate('/');
 
             })
             .catch((e) => {
+                console.log(e)
                 alert('실패')
+
                 window.location.href = "/login"
             })
 
@@ -88,23 +98,6 @@ const Login = () => {
 
 
                                             <div className="d-flex align-items-center justify-content-end mt-4 mb-0">
-
-                                                <>
-                                                    <input
-                                                        type="radio"
-                                                        name="gender"
-                                                        value="learner"
-                                                        onChange={(e)=>{setUser(e.target.value)}}
-                                                    />
-                                                    학생
-                                                    <input
-                                                        type="radio"
-                                                        name="gender"
-                                                        value="teacher"
-                                                        onChange={(e)=>{setUser(e.target.value)}}
-                                                    />
-                                                    교사
-                                                </>
 
                                                 <input className="btn btn-primary" type="submit" value="Login"></input>
 

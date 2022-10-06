@@ -1,8 +1,8 @@
 import http from "./http";
 
-export async function login(dataToSubmit) {
+export async function login({email,password}) {
 
-    return http.post('/api/login', dataToSubmit, {
+    return http.post(`/api/member/login?email=${email}&password=${password}`,  {
         withCredentials: true,
     })
 }
@@ -12,6 +12,10 @@ export async function register(dataToSubmit) {
     return http.post('/api/register', dataToSubmit, {
         withCredentials: true,
     })
+}
+
+export async function duplicateId(checkId) {
+    return http.get(`/api/member/checkid?id=${checkId}`);
 }
 
 export async function start(url) {
@@ -31,4 +35,6 @@ export function adminAuth() {
     const result = true
     return result;
 }
+
+
 

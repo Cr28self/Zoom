@@ -4,6 +4,8 @@ import "./Register.css";
 import useInput from "../../hooks/useInput"
 import * as authApi from "../../api/auth";
 import {useLocation, useNavigate} from "react-router-dom";
+import DuplicateBtn from "../../components/common/Button/DuplicateBtn";
+import * as boardApi from "../../api/board";
 
 const Register = () => {
 
@@ -11,6 +13,8 @@ const Register = () => {
 
     const [currentLastUrl, setCurrentLastUrl] = useState(null);
 
+    const [isDuplicated,setIsDuplicated] = useState(false);
+    //중복 체크
 
     const navigate = useNavigate();
     const Id = useInput('');
@@ -49,6 +53,14 @@ const Register = () => {
     };
 
 
+    const onCheckDuplicateId = () => {
+        authApi.duplicateId(Id)
+            .then((res)=>{
+                setIsDuplicated(res);
+            });
+
+    };
+
     useEffect(() => {
         const splitUrl = locationHook?.pathname?.split('/') ?? null;
         const location =
@@ -79,9 +91,15 @@ const Register = () => {
                                                 placeholder=""
                                                 {...Id}
                                                 required="required"/>
+
                                             <div className="invalid-feedback">
                                                 아이디를 입력해주세요!
                                             </div>
+
+                                        </div>
+                                        <div className="col-md-6 mb-3">
+                                            <br />
+                                            <DuplicateBtn check={onCheckDuplicateId}/>
                                         </div>
 
                                     </div>

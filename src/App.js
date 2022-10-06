@@ -8,7 +8,7 @@ import Footer from "./components/common/Footer";
 
 
 function App() {
-    const access = localStorage.getItem('idx');
+    const access = localStorage.getItem('user');
 
     const history = useNavigate();
     const [user, setUser] = useState('');

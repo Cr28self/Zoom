@@ -25,8 +25,8 @@ const Header = (props) => {
     };
 
     const logoutFuncTmp =()=>{
-
-        localStorage.removeItem('idx');
+        localStorage.removeItem('user');
+        localStorage.removeItem('token');
         navigate('/login')
 
     }
